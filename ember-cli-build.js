@@ -6,7 +6,9 @@ module.exports = function (defaults) {
   const app = new EmberApp(defaults, {
     'ember-cli-babel': { enableTypeScriptTransform: true },
 
-    // Add options here
+    'ember-composable-helpers': {
+      // only: ['group-by'],
+    },
   });
 
   const { Webpack } = require('@embroider/webpack');
